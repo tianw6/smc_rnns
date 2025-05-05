@@ -178,6 +178,8 @@ class RNN(nn.Module):
             )
 
         elif params["initial_state"] == "trainable":
+
+
             self.initial_state = nn.Parameter(
                 torch.zeros(self.dim_z), requires_grad=True
             )

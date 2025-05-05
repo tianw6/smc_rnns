@@ -11,9 +11,9 @@ from nlb_tools.make_tensors import (
 )
 
 # -- prepare loading NWB dataset ------------------
-DANDI_ROOT = Path(__file__).absolute().parent.parent.parent / "data_untracked" / "dandi"
+DANDI_ROOT = Path(__file__).absolute().parent.parent.parent / "data" / "macaque_reach"
 OUTPUT_ROOT = (
-    Path(__file__).absolute().parent.parent.parent / "data_untracked" / "processed"
+    Path(__file__).absolute().parent.parent.parent / "data" / "processed"
 )
 data_map = {
     "mc_maze": DANDI_ROOT / "000128" / "sub-Jenkins",
